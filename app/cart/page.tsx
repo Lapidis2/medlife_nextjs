@@ -38,7 +38,7 @@ export default function CartPage() {
             <p className="text-muted-foreground mb-8">
               Looks like you haven't added any products yet. Start shopping to add items to your cart.
             </p>
-            <Link href="#shop">
+            <Link href="/">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
