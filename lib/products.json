@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Vitamin C 1000mg",
+    "category": "Vitamins",
+    "price": 12.99,
+    "image": "/multivitamin-assortment.png",
+    "description": "Boost your immune system with our premium Vitamin C supplement",
+    "rating": 4.8,
+    "reviews": 234,
+    "inStock": true
+  },
+  {
+    "id": 2,
+    "name": "Pain Relief Plus",
+    "category": "Pain Relief",
+    "price": 8.99,
+    "image": "/allergy-relief.jpg",
+    "description": "Fast-acting pain relief for headaches and muscle pain",
+    "rating": 4.6,
+    "reviews": 189,
+    "inStock": true
+  },
+  {
+    "id": 3,
+    "name": "Skincare Serum",
+    "category": "Skincare",
+    "price": 24.99,
+    "image": "/night-cream.jpg",
+    "description": "Advanced formula for healthy, radiant skin",
+    "rating": 4.9,
+    "reviews": 312,
+    "inStock": true
+  },
+  {
+    "id": 4,
+    "name": "Multivitamin Daily",
+    "category": "Vitamins",
+    "price": 15.99,
+    "image": "/digestive-health.jpg",
+    "description": "Complete daily nutrition with 25+ essential vitamins",
+    "rating": 4.7,
+    "reviews": 278,
+    "inStock": true
+  },
+  {
+    "id": 5,
+    "name": "Allergy Relief",
+    "category": "Pain Relief",
+    "price": 10.99,
+    "image": "/allergy-relief.jpg",
+    "description": "Non-drowsy formula for seasonal and year-round allergies",
+    "rating": 4.5,
+    "reviews": 156,
+    "inStock": true
+  },
+  {
+    "id": 6,
+    "name": "Night Cream",
+    "category": "Skincare",
+    "price": 28.99,
+    "image": "/night-cream.jpg",
+    "description": "Rich moisturizer for overnight skin renewal",
+    "rating": 4.8,
+    "reviews": 267,
+    "inStock": true
+  },
+  {
+    "id": 7,
+    "name": "Digestive Health",
+    "category": "Wellness",
+    "price": 13.99,
+    "image": "/digestive-health.jpg",
+    "description": "Support healthy digestion with probiotics",
+    "rating": 4.6,
+    "reviews": 198,
+    "inStock": true
+  },
+  {
+    "id": 8,
+    "name": "Sleep Support",
+    "category": "Wellness",
+    "price": 14.99,
+    "image": "/sleep-support.jpg",
+    "description": "Natural formula to promote restful sleep",
+    "rating": 4.7,
+    "reviews": 221,
+    "inStock": true
+  }
+]
