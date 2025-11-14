@@ -1,9 +1,13 @@
+
 import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 import { CartProvider } from "@/components/cart-context"
 import { WishlistProvider } from "@/components/wishlist-context"
+
+
+import { Toaster } from "@/components/ui/toaster"
 
 const _geistSans = Geist({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
@@ -38,7 +42,12 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-sans antialiased">
         <CartProvider>
-          <WishlistProvider>{children}</WishlistProvider>
+          <WishlistProvider>  
+            
+              {children}
+         
+            </WishlistProvider>
+           <Toaster/>
         </CartProvider>
       </body>
     </html>

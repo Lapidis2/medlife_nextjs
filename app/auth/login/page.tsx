@@ -6,6 +6,8 @@ import { useState } from "react"
 import Link from "next/link"
 import { ArrowLeft, Mail, Lock, Eye, EyeOff } from "lucide-react"
 import { motion } from "framer-motion"
+import { toast } from '@/hooks/use-toast'
+
 
 export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false)
@@ -16,11 +18,16 @@ export default function LoginPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
-    // Simulate API call
-    setTimeout(() => {
-      setLoading(false)
-      alert("Login successful!")
-    }, 1500)
+ setTimeout(() => {
+  setLoading(false)
+
+  toast({
+    title: "Login successful",
+    description: "Welcome back!",
+    duration: 2000,
+  })
+}, 1500)
+
   }
 
   const containerVariants = {
@@ -122,15 +129,13 @@ export default function LoginPage() {
           </form>
 
           <motion.div variants={itemVariants} className="mt-8 pt-6 border-t border-green-100">
-            <button className="w-full py-2.5 px-4 border-2 border-green-200 rounded-lg hover:bg-green-50 transition-colors font-medium text-foreground flex items-center justify-center gap-2">
-              <svg className="w-5 h-5" viewBox="0 0 24 24">
-                <path
-                  fill="currentColor"
-                  d="M12.545,10.639v3.57h5.338c-0.3,1.577-1.54,2.846-3.272,3.41c-0.993,0.424-2.05,0.476-3.066,0.15c-0.744-0.24-1.432-0.648-1.977-1.193c-1.088-1.088-1.764-2.546-1.764-4.167c0-1.621,0.676-3.079,1.764-4.167c0.545-0.545,1.233-0.953,1.977-1.193c1.016-0.326,2.073-0.274,3.066,0.15c0.744,0.318,1.405,0.837,1.868,1.453h2.746c-0.779-2.106-2.89-3.604-5.336-3.604C6.755,3.471,4.5,5.726,4.5,8.507c0,2.781,2.255,5.036,5.045,5.036c1.869,0,3.516-1.053,4.377-2.59c0.424-0.748,0.708-1.59,0.708-2.503H12.545z"
-                />
-              </svg>
-              Continue with Google
-            </button>
+          <button className="w-full py-2.5 px-4 border-2 border-green-200 rounded-lg hover:bg-green-50 transition-colors font-medium text-foreground flex items-center justify-center gap-2">
+  <svg className="w-5 h-5" viewBox="0 0 24 24" aria-hidden="true">
+    <path fill="currentColor" d="M12.545,10.639v3.57h5.338c-0.3,1.577-1.54,2.846-3.272,3.41c-0.993,0.424-2.05,0.476-3.066,0.15c-0.744-0.24-1.432-0.648-1.977-1.193c-1.088-1.088-1.764-2.546-1.764-4.167c0-1.621,0.676-3.079,1.764-4.167c0.545-0.545,1.233-0.953,1.977-1.193c1.016-0.326,2.073-0.274,3.066,0.15c0.744,0.318,1.405,0.837,1.868,1.453h2.746c-0.779-2.106-2.89-3.604-5.336-3.604C6.755,3.471,4.5,5.726,4.5,8.507c0,2.781,2.255,5.036,5.045,5.036c1.869,0,3.516-1.053,4.377-2.59c0.424-0.748,0.708-1.59,0.708-2.503H12.545z" />
+  </svg>
+  Continue with Google
+</button>
+
           </motion.div>
         </motion.div>
       </div>

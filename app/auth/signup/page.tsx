@@ -6,6 +6,8 @@ import { useState } from "react"
 import Link from "next/link"
 import { ArrowLeft, Mail, Lock, User, Eye, EyeOff } from "lucide-react"
 import { motion } from "framer-motion"
+import { toast } from '@/hooks/use-toast'
+
 
 export default function SignupPage() {
   const [showPassword, setShowPassword] = useState(false)
@@ -19,10 +21,14 @@ export default function SignupPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setLoading(true)
-    // Simulate API call
+
     setTimeout(() => {
       setLoading(false)
-      alert("Account created successfully!")
+    toast({
+    title: "Registration successful",
+    description: "Go to login",
+    duration: 2000,
+  })
     }, 1500)
   }
 

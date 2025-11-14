@@ -3,7 +3,7 @@
 import { motion } from "framer-motion"
 import { ProductCard } from "./product-card"
 import type { Product } from "@/lib/types"
-import Link from "next/link" // Added import for Link
+import Link from "next/link" 
 
 interface FeaturedProductsProps {
   products: Product[]
